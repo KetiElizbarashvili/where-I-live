@@ -15,11 +15,7 @@
     void main() {
         float animatedTime = time - delay;
         animatedTime = mod(animatedTime, colorSpeed);
-        float mixFactor = animatedTime / colorSpeed;
-        vec3 finalColor = mix(baseColor, vec3(0.702,0.71,0.459), mixFactor);
-        gl_FragColor = vec4(finalColor, 1.0);
-    }
-</script>
+ 
 
       
 </script>
