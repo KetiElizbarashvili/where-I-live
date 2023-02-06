@@ -31,11 +31,7 @@ n() {
         float waveIntensity = abs(sin(distance * 100.0 + time));
     
         vec3 finalColor = mix(vec3(0.545,0.553,0.306), waveColor, waveIntensity);
-    
-        gl_FragColor = vec4(finalColor, 1.0);
-    }
-</script>
-
+ 
 
 // Original code: https://codepen.io/aderaaij/details/BapYONL
 <script type="x-shader/x-vertex" id="vertexshader">
