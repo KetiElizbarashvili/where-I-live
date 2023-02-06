@@ -23,11 +23,7 @@ n() {
         vUv = uv;
         vec2 center = vec2(0.0, 0.0);
         float distance = length(uv - center);
-        vec3 newPosition = position + vec3(0.0, 0.0, 0.0);
-
-        gl_Position = projectionMatrix * modelViewMatrix * vec4(newPosition, 1.0);
-    }
-</script>
+     
 
 <script type="x-shader/x-fragment" id="fragmentshaderDoor">
     uniform float time;
