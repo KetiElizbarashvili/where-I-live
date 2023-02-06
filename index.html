@@ -26,13 +26,7 @@ n() {
      
 
 <script type="x-shader/x-fragment" id="fragmentshaderDoor">
-    uniform float time;
-    varying vec2 vUv;
-    
-    void main() {
-        vec3 waveColor = vec3(0.702,0.71,0.459);
-    
-        vec2 center = vec2(0.5, 0.5);
+     vec2 center = vec2(0.5, 0.5);
         float distance = length(vUv - center);
         float waveIntensity = abs(sin(distance * 100.0 + time));
     
