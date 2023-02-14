@@ -20,12 +20,7 @@
         gl_FragColor = vec4(finalColor, 1.0);
     }
 </script>
-<!-- ========================== -->
-<script type="x-shader/x-vertex" id="vertexshaderBubble">
-    varying vec2 vUv;
-    uniform float time;
 
-    void main() {
         vUv = uv;
         vec3 newPosition = position;
         newPosition.x += sin(time * 2.0) * 0.0075;
