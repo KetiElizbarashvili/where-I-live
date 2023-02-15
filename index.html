@@ -21,12 +21,7 @@
     }
 </script>
 
-        vUv = uv;
-        vec3 newPosition = position;
-        newPosition.x += sin(time * 2.0) * 0.0075;
-        newPosition.y += cos(time * 2.0) * 0.0075;
-        gl_Position = projectionMatrix * modelViewMatrix * vec4(newPosition, 1.0);
-    }
+      
 </script>
 <script type="x-shader/x-fragment" id="fragmentshaderBubble">
     varying vec2 vUv;
