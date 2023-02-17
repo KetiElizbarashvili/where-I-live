@@ -25,13 +25,6 @@ n() {
         float distance = length(uv - center);
      
 
-<script type="x-shader/x-fragment" id="fragmentshaderDoor">
-     vec2 center = vec2(0.5, 0.5);
-        float distance = length(vUv - center);
-        float waveIntensity = abs(sin(distance * 100.0 + time));
-    
-        vec3 finalColor = mix(vec3(0.545,0.553,0.306), waveColor, waveIntensity);
- 
 
 // Original code: https://codepen.io/aderaaij/details/BapYONL
 <script type="x-shader/x-vertex" id="vertexshader">
